@@ -1,4 +1,4 @@
-FROM limaofeng/node-alpine
+FROM registry.cn-hangzhou.aliyuncs.com/zbsg/node-alpine:6.10.0
 
 RUN cnpm install --g gitbook-cli &&\
 	gitbook -V &&\
