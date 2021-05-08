@@ -1,6 +1,6 @@
-FROM limaofeng/node-alpine
+FROM node:14.16.1
 
-RUN cnpm install --g gitbook-cli &&\
+RUN npm install --g gitbook-cli &&\
 	gitbook -V &&\
 	npm cache clear &&\
 	rm -rf /tmp/*
