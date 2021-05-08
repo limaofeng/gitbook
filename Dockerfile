@@ -1,4 +1,4 @@
-FROM node:14.16.1
+FROM node:10.14.1
 
 RUN npm install --g gitbook-cli &&\
 	gitbook -V &&\
