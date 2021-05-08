@@ -2,7 +2,6 @@ FROM node:10.14.1
 
 RUN npm install --g gitbook-cli &&\
 	gitbook -V &&\
-	npm cache clear &&\
 	rm -rf /tmp/*
 
 WORKDIR /srv/gitbook
